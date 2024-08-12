@@ -33,7 +33,7 @@ To get started with this project, follow these steps:
 7. **Remove the config file. The file name is just a number.** By default it is
    located in `~/.local/share/signal-cli/data/<SOME_NUMBER>`. If you used the
    `--config <PATH>` flag with the previous command, then the file you need to
-   remove will be located in `<PATH>/<SOME_NUMBER>`.
+   remove will be located in `<PATH>/data/<SOME_NUMBER>`.
 
 8. **Link the device:**
     ```bash
