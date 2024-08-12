@@ -110,6 +110,7 @@ class dcClient(discord.Client):
         print(f'Logged on as {self.user}')
 
     async def on_message(self, message):
+        print("DC Message!")
         if message.channel.id == DISCORD_CHANNEL_ID\
         and message.author != self.user:
             attachment_paths = []
@@ -127,6 +128,9 @@ class dcClient(discord.Client):
                 for path in attachment_paths:
                     if os.path.exists(path):
                         os.remove(path)
+            else:
+                send_to_signal(f"{message.author} (Discord): \
+                        {message.content}")
 
 client = dcClient()
 
