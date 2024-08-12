@@ -119,8 +119,8 @@ class dcClient(discord.Client):
                     attachment_paths.append(
                             await download_attachment(attachment.url,
                                         f"{TEMP_DIR}/{attachment.filename}"))
-                send_to_signal(f"{message.author} (Discord): \
-                        {message.content}", attachment_paths[0])
+                send_to_signal(f"{message.author} (Discord): "\
+                        f"{message.content}", attachment_paths[0])
                 for path in attachment_paths[1:]:
                     send_to_signal(f"{message.author} (Discord):", path)
                 
@@ -128,8 +128,8 @@ class dcClient(discord.Client):
                     if os.path.exists(path):
                         os.remove(path)
             else:
-                send_to_signal(f"{message.author} (Discord): \
-                        {message.content}")
+                send_to_signal(f"{message.author} (Discord): "\
+                        f"{message.content}")
 
 client = dcClient()
 
