@@ -17,6 +17,7 @@ To get started with this project, follow these steps:
     source .venv/bin/activate  # On Windows, use `.venv\Scripts\activate`
     ```
 3. **Export the environment variables by appending the following to your `.venv/bin/activate`:**
+
    On Linux/macOS:
    ```bash
    export DISCORD_TOKEN=<TOKEN>
