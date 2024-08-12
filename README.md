@@ -3,7 +3,7 @@
 sd-bridge is a simple Signal-Discord bridge bot that allows Signal users to
 communicate with Discord users and vice versa.
 
-## Setting up the Project
+## Setting up the project
 To get started with this project, follow these steps:
 
 1. **Clone the repository:**
